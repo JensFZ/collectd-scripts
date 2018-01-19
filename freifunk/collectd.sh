@@ -15,10 +15,10 @@ CONF_AUTO_UPDATE=1
 CONF_AUTO_UPDATE_AGE=5
 
 # URL for nodes.json
-CONF_NODE_JSON_URL="https://hg2.ffs.ovh/json/nodes.json"
+CONF_NODE_JSON_URL="https://downloads.bremen.freifunk.net/data/nodelist.json"
 
 # Storage path for nodes.json
-CONF_NODE_JSON_PATH="/dev/shm/ffs-stats-nodes.json"
+CONF_NODE_JSON_PATH="/dev/shm/ffhb-stats-nodes.json"
 
 # Collect stats only on update
 # -> 1 = only collect stats on update, cache them in memory
@@ -33,7 +33,7 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 HOSTNAME="$1"
 INTERVAL="${COLLECTD_INTERVAL:-60}"
 
-WGET_OPTS="--user-agent=ffs-collectd-agent"
+WGET_OPTS="--user-agent=ffhb-collectd-agent"
 
 FORCE_UPDATE=0
 UPDATE_TIME=-1
