@@ -15,7 +15,7 @@ CONF_AUTO_UPDATE=1
 CONF_AUTO_UPDATE_AGE=5
 
 # URL for nodes.json
-CONF_NODE_JSON_URL="https://downloads.bremen.freifunk.net/data/nodelist.json"
+CONF_NODE_JSON_URL="https://downloads.bremen.freifunk.net/data/meshviewer.json"
 
 # Storage path for nodes.json
 CONF_NODE_JSON_PATH="/dev/shm/ffhb-stats-nodes.json"
